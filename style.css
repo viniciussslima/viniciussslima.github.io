@@ -76,6 +76,31 @@ header a {
   margin: 10px;
 }
 
+.content-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-grid img {
+  width: 125px;
+  height: 100px;
+  margin: 10px;
+}
+
+.content-grid h3 {
+  margin: 10px;
+}
+
 .profile-pic {
   border-color: #02810f;
   border-style: solid;
