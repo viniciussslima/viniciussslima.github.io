@@ -65,6 +65,11 @@ header a {
   margin: 10px 20px;
 }
 
+.content-flex ul {
+  max-width: 710px;
+  margin: 10px 50px;
+}
+
 .content-flex img {
   width: 100px;
   height: 100px;
