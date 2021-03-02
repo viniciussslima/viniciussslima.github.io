@@ -8,16 +8,29 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./images/profile.jpg" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
   <title>Viniciussslima</title>
 </head>
 
 <body>
   <header>
-    <a href="#about">Sobre</a>
-    <a href="#experience">Experiência</a>
-    <a href="#projects">Projetos pessoasis</a>
-    <a href="#tecnologes">Tecnologias</a>
-    <a href="#social-media">Redes sociais</a>
+    <i onclick="toggleMenu()" class="fas fa-bars"></i>
+    <div id="descktop-menu">
+      <a href="#about">Sobre</a>
+      <a href="#experience">Experiência</a>
+      <a href="#projects">Projetos pessoasis</a>
+      <a href="#tecnologes">Tecnologias</a>
+      <a href="#social-media">Redes sociais</a>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" style="display:none">
+      <a onclick="toggleMenu()" href="#about">Sobre</a>
+      <a onclick="toggleMenu()" href="#experience">Experiência</a>
+      <a onclick="toggleMenu()" href="#projects">Projetos pessoasis</a>
+      <a onclick="toggleMenu()" href="#tecnologes">Tecnologias</a>
+      <a onclick="toggleMenu()" href="#social-media">Redes sociais</a>
+    </div>
   </header>
   <main>
     <!-- About -->
@@ -58,6 +71,10 @@
       </div>
 
       <div class="content-flex flex-right">
+        <a href="https://sigsaude.imd.ufrn.br" target="_blank">
+          <img src="./images/experience/sigsaude.png" alt="Logo do SaIoT" />
+          <h2>SIGSAUDE</h2>
+        </a>
         <div>
           <p>O SIGSAUDE tem como objetivo geral o desenvolvimento de uma plataforma computacional
             integrada a ser utilizada pelas unidades da UFRN (Universidade Federal Do Rio Grande do Norte) que prestam atendimento às pessoas na área
@@ -71,10 +88,6 @@
             <li>Conexão com bancos de dados Postgres.</li>
           </ul>        
         </div>
-        <a href="https://sigsaude.imd.ufrn.br" target="_blank">
-          <img src="./images/experience/sigsaude.png" alt="Logo do SaIoT" />
-          <h2>SIGSAUDE</h2>
-        </a>
       </div>
     </section>
     <hr />
@@ -182,6 +195,17 @@
   <footer>
     <h3>Desenvolvido por Vinicius Santos</h3>
   </footer>
+  <script>
+    function toggleMenu() {
+      if ( document.getElementById("mobile-menu").style.display === "none") {
+        document.getElementById("mobile-menu").style.display = "flex"
+      }
+      else {
+        document.getElementById("mobile-menu").style.display = "none"
+      }
+
+    }
+  </script>
 </body>
 
 </html>
