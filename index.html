@@ -1,211 +1,295 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/profile.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <title>Viniciussslima</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./images/profile.jpg" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
-  <title>Viniciussslima</title>
-</head>
-
-<body>
-  <header>
-    <i onclick="toggleMenu()" class="fas fa-bars"></i>
-    <div id="descktop-menu">
-      <a href="#about">Sobre</a>
-      <a href="#experience">Experiência</a>
-      <a href="#projects">Projetos pessoasis</a>
-      <a href="#tecnologes">Tecnologias</a>
-      <a href="#social-media">Redes sociais</a>
-    </div>
-
-    <!-- Mobile menu -->
-    <div id="mobile-menu" style="display:none">
-      <a onclick="toggleMenu()" href="#about">Sobre</a>
-      <a onclick="toggleMenu()" href="#experience">Experiência</a>
-      <a onclick="toggleMenu()" href="#projects">Projetos pessoasis</a>
-      <a onclick="toggleMenu()" href="#tecnologes">Tecnologias</a>
-      <a onclick="toggleMenu()" href="#social-media">Redes sociais</a>
-    </div>
-  </header>
-  <main>
-    <!-- About -->
-    <section id="about">
-      <h1>Sobre</h1>
-      <div class="content-flex about-content">
-        <img class="profile-pic" src="./images/profile.jpg" alt="Foto de perfil" />
-        <h2>Vinicius Santos Silva de Lima</h2>
-        <div>
-          <p>Sou desenvolvedor de software focado em desivolvimento WEB.</p>
-          <p>Sempre estou em busca de me manter atualizado e aprender coisas novas.</p>
-          <p>Além de programar gosto de praticar esportes e sair com os amigos.</p>
-        </div>
-      </div>
-    </section>
-    <hr />
-    <!-- Experience -->
-    <section id="experience">
-      <h1>Experiência</h1>
-
-      <div class="content-flex flex-left">
-        <a href="https://saiot.ect.ufrn.br" target="_blank">
-          <img src="./images/experience/saiot.png" alt="Logo do SaIoT" />
-          <h2>SAIoT</h2>
-        </a>
-        <div>
-          <p>O SAIoT (<em>Smart Automation using Internet of Things</em>) tem como objetivo criar 
-            uma plataforma de comunicação entre dispositivos conectados para monitoração e 
-            atuação de dispositivos de maneira geral, através de uma interface WEB.</p>
-          <p><strong> Meu trabalho:</strong></p>
-          <ul>
-            <li>Desenvolvimento da interface WEB usando React;</li>
-            <li>Desivolvimento de uma API usando NodeJS;</li>
-            <li>Conexão com bancos de dados Mysql, MongoDB e Redis;</li>
-            <li>Deploy com gitlab CI/CD, docker e nginx.</li>
-          </ul>
-        </div>
+  <body>
+    <header>
+      <i onclick="toggleMenu()" class="fas fa-bars"></i>
+      <div id="descktop-menu">
+        <a href="#about">Sobre</a>
+        <a href="#experience">Experiência</a>
+        <a href="#projects">Projetos pessoasis</a>
+        <a href="#tecnologes">Tecnologias</a>
+        <a href="#social-media">Redes sociais</a>
       </div>
 
-      <div class="content-flex flex-right">
-        <a href="https://sigsaude.imd.ufrn.br" target="_blank">
-          <img src="./images/experience/sigsaude.png" alt="Logo do SaIoT" />
-          <h2>SIGSAUDE</h2>
-        </a>
-        <div>
-          <p>O SIGSAUDE tem como objetivo geral o desenvolvimento de uma plataforma computacional
-            integrada a ser utilizada pelas unidades da UFRN (Universidade Federal Do Rio Grande do Norte) que prestam atendimento às pessoas na área
-            da saúde, mas que também possa eventualmente ser integrado ao sistema que está sendo
-            implantado pelo Ministério da Saúde (e-SUS), permitindo os serviços terciários realizarem de
-            forma mais adequada a contra referência.</p>
-          <p><strong> Meu trabalho:</strong></p>
-          <ul>
-            <li>Desenvolvimento da interface WEB usando Themyleaf;</li>
-            <li>Desivolvimento de uma API usando Java e Spring Boot;</li>
-            <li>Conexão com bancos de dados Postgres.</li>
-          </ul>        
-        </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" style="display: none">
+        <a onclick="toggleMenu()" href="#about">Sobre</a>
+        <a onclick="toggleMenu()" href="#experience">Experiência</a>
+        <a onclick="toggleMenu()" href="#projects">Projetos pessoasis</a>
+        <a onclick="toggleMenu()" href="#tecnologes">Tecnologias</a>
+        <a onclick="toggleMenu()" href="#social-media">Redes sociais</a>
       </div>
-    </section>
-    <hr />
+    </header>
+    <main>
+      <!-- About -->
+      <section id="about">
+        <h1>Sobre</h1>
+        <div class="content-flex about-content">
+          <img
+            class="profile-pic"
+            src="./images/profile.jpg"
+            alt="Foto de perfil"
+          />
+          <h2>Vinicius Santos Silva de Lima</h2>
+          <div>
+            <p>Sou desenvolvedor de software focado em desivolvimento WEB.</p>
+            <p>
+              Sempre estou em busca de me manter atualizado e aprender coisas
+              novas.
+            </p>
+            <p>
+              Além de programar gosto de praticar esportes e sair com os amigos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Experience -->
+      <section id="experience">
+        <h1>Experiência</h1>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h1>Projetos pessoais</h1>
-      <div class="content-flex flex-left">
-        <a href="https://clima-hoje.vercel.app/" target="_blank">
-          <img src="./images/projects/climaHoje.png" alt="Logo do climaHoje" />
-          <h2>ClimaHoje</h2>
-        </a>
-        <div>
-          <p>O ClimaHoje é um site para mostrar o clima atual em qualquer cidade do mundo.</p>
-          <p><strong> Meu trabalho:</strong></p>
-          <ul>
-            <li>Desenvolvimento da interface WEB usando React.</li>
-          </ul>
+        <div class="content-flex flex-left">
+          <a class="link" href="https://saiot.ect.ufrn.br" target="_blank">
+            <img src="./images/experience/saiot.png" alt="Logo do SaIoT" />
+            <h2>SaIoT</h2>
+          </a>
+          <div>
+            <p>
+              O SaIoT (<em>Smart Automation using Internet of Things</em>) tem
+              como objetivo criar uma plataforma de comunicação entre
+              dispositivos conectados para monitoração e atuação de dispositivos
+              de maneira geral, através de uma interface WEB.
+            </p>
+            <p><strong> Meu trabalho:</strong></p>
+            <ul>
+              <li>Desenvolvimento da interface WEB usando React;</li>
+              <li>Desivolvimento de uma API usando NodeJS;</li>
+              <li>Conexão com bancos de dados Mysql, MongoDB e Redis;</li>
+              <li>Deploy com gitlab CI/CD, docker e nginx.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <hr />
 
-    <!-- Tecnologes -->
-    <section id="tecnologes">
-      <h1>Tecnologias</h1>
+        <div class="content-flex flex-right">
+          <a
+            class="link"
+            href="https://mamiferosaquaticos.org.br"
+            target="_blank"
+          >
+            <img src="./images/experience/fma.png" alt="Logo da FMA" />
+            <h2>FMA</h2>
+          </a>
+          <div>
+            <p>
+              A FMA (Fundação mamíferos aquáticos) é uma organização da
+              sociedade civil, sem fins lucrativos, que desde 1989, trabalha
+              para conservar o meio ambiente em todos os seus aspectos, tendo
+              como foco primordial os mamíferos aquáticos e seus habitats. Atua
+              nacionalmente com atividades que envolvem manejo e pesquisa
+              científica, estudando os efeitos antropogênicos nos recursos
+              marinhos, e com parcerias e ações colaborativas que promovem
+              mudanças socioambientais. Neste contexto, também está inserida no
+              apoio à construção e execução de políticas públicas e marcos
+              regulatórios.
+            </p>
+            <p><strong> Meu trabalho:</strong></p>
+            <ul>
+              <li>
+                Implementação de sistemas web que recebem dados de dispositivos
+                IoT;
+              </li>
+              <li>
+                tratamento dos dados e a visualização desses nas plataformas
+                TagoIo e Saiot;
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="content-grid">
-        <div class="card">
-          <img src="./images/tecnologes/html.svg" alt="HTML logo" />
-          <h3>HTML</h3>
+        <div class="content-flex flex-left">
+          <a class="link" href="https://sigsaude.imd.ufrn.br" target="_blank">
+            <img src="./images/experience/sigsaude.png" alt="Logo do SaIoT" />
+            <h2>SIGSAUDE</h2>
+          </a>
+          <div>
+            <p>
+              O SIGSAUDE tem como objetivo geral o desenvolvimento de uma
+              plataforma computacional integrada a ser utilizada pelas unidades
+              da UFRN (Universidade Federal Do Rio Grande do Norte) que prestam
+              atendimento às pessoas na área da saúde, mas que também possa
+              eventualmente ser integrado ao sistema que está sendo implantado
+              pelo Ministério da Saúde (e-SUS), permitindo os serviços
+              terciários realizarem de forma mais adequada a contra referência.
+            </p>
+            <p><strong> Meu trabalho:</strong></p>
+            <ul>
+              <li>Desenvolvimento da interface WEB usando Themyleaf;</li>
+              <li>Desivolvimento de uma API usando Java e Spring Boot;</li>
+              <li>Conexão com bancos de dados Postgres.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <img src="./images/tecnologes/css.svg" alt="CSS logo" />
-          <h3>CSS</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/js.svg" alt="JavaScript logo" />
-          <h3>JavaScript</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/react.svg" alt="React logo" />
-          <h3>React</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/java.svg" alt="Java logo" />
-          <h3>Java</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/spring.svg" alt="Spring logo" />
-          <h3>Spring</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/docker.svg" alt="Docker logo" />
-          <h3>Docker</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/mysql.svg" alt="Mysql logo" />
-          <h3>Mysql</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/postgres.svg" alt="Postgres logo" />
-          <h3>Postgres</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/mongodb.svg" alt="MongoDB logo" />
-          <h3>MongoDB</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/redis.svg" alt="Redis logo" />
-          <h3>Redis</h3>
-        </div>
-        <div class="card">
-          <img src="./images/tecnologes/git.svg" alt="Git logo" />
-          <h3>Git</h3>
-        </div>
-      </div>
-    </section>
-    <hr />
+      </section>
+      <hr />
 
-    <!-- Social media -->
-    <section id="social-media">
-      <h1>Redes sociais</h1>
-      <div class="content-grid">
-        <div class="card">
-          <a href="https://www.linkedin.com/in/vinicius-s-17368b139/" target="_blank"><img
-              src="./images/social-media/linkedin.svg" alt="Logo do linkedin"></a>
-          <h3>Linkedin</h3>
+      <!-- Projects -->
+      <section id="projects">
+        <h1>Projetos pessoais</h1>
+        <div class="content-flex flex-left">
+          <a class="link" href="https://clima-hoje.vercel.app/" target="_blank">
+            <img
+              src="./images/projects/climaHoje.png"
+              alt="Logo do climaHoje"
+            />
+            <h2>ClimaHoje</h2>
+          </a>
+          <div>
+            <p>
+              O ClimaHoje é um site para mostrar o clima atual em qualquer
+              cidade do mundo.
+            </p>
+            <p><strong> Meu trabalho:</strong></p>
+            <ul>
+              <li>Desenvolvimento da interface WEB usando React.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <a href="https://github.com/viniciussslima/" target="_blank"><img
-              src="./images/social-media/github.svg" alt="Logo do github"></a></a>
-          <h3>Github</h3>
-        </div>
-        <div class="card">
-          <a href="https://t.me/viniciussslima/" target="_blank"><img
-              src="./images/social-media/telegram.svg" alt="Logo do telegtam"></a></a>
-          <h3>Telegram</h3>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <hr style="margin-top: 25px" />
 
-  <!-- Footer -->
-  <footer>
-    <h3>Desenvolvido por Vinicius Santos</h3>
-  </footer>
-  <script>
-    function toggleMenu() {
-      if ( document.getElementById("mobile-menu").style.display === "none") {
-        document.getElementById("mobile-menu").style.display = "flex"
+      <!-- Tecnologes -->
+      <section id="tecnologes">
+        <h1>Tecnologias</h1>
+
+        <div class="content-grid">
+          <div class="card">
+            <img src="./images/tecnologes/html.svg" alt="HTML logo" />
+            <h3>HTML</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/css.svg" alt="CSS logo" />
+            <h3>CSS</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/js.svg" alt="JavaScript logo" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/react.svg" alt="React logo" />
+            <h3>React</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/java.svg" alt="Java logo" />
+            <h3>Java</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/spring.svg" alt="Spring logo" />
+            <h3>Spring</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/docker.svg" alt="Docker logo" />
+            <h3>Docker</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/mysql.svg" alt="Mysql logo" />
+            <h3>Mysql</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/postgres.svg" alt="Postgres logo" />
+            <h3>Postgres</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/mongodb.svg" alt="MongoDB logo" />
+            <h3>MongoDB</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/redis.svg" alt="Redis logo" />
+            <h3>Redis</h3>
+          </div>
+          <div class="card">
+            <img src="./images/tecnologes/git.svg" alt="Git logo" />
+            <h3>Git</h3>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Social media -->
+      <section id="social-media">
+        <h1>Redes sociais</h1>
+        <div class="content-grid">
+          <div class="card">
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/vinicius-s-17368b139/"
+              target="_blank"
+            >
+              <img
+                src="./images/social-media/linkedin.svg"
+                alt="Logo do linkedin"
+              />
+            </a>
+            <h3>Linkedin</h3>
+          </div>
+          <div class="card">
+            <a
+              class="link"
+              href="https://github.com/viniciussslima/"
+              target="_blank"
+            >
+              <img
+                src="./images/social-media/github.svg"
+                alt="Logo do github"
+              />
+            </a>
+            <h3>Github</h3>
+          </div>
+          <div class="card">
+            <a class="link" href="https://t.me/viniciussslima/" target="_blank">
+              <img
+                src="./images/social-media/telegram.svg"
+                alt="Logo do telegtam"
+              />
+            </a>
+            <h3>Telegram</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <h3>Desenvolvido por Vinicius Santos</h3>
+    </footer>
+
+    <!-- JavaScript-->
+    <script>
+      function toggleMenu() {
+        if (document.getElementById("mobile-menu").style.display === "none") {
+          document.getElementById("mobile-menu").style.display = "flex";
+        } else {
+          document.getElementById("mobile-menu").style.display = "none";
+        }
       }
-      else {
-        document.getElementById("mobile-menu").style.display = "none"
-      }
-
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
